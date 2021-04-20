@@ -1,3 +1,61 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$primaryBg: #dcdde1;
+$color: #40739e;
+$timeContainerHight: 100vh;
+
 body {
   background-color: skyblue;
+  font-family: sans-serif;
+}
+
+#translateButton {
+  float: right;
+  height: 6vh;
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    background: $primaryBg;
+    border: 5px solid $primaryBg;
+    padding: 15px 10px;
+
+    color: $color;
+    font-size: 18px;
+  }
+}
+
+#timer-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 94vh;
+
+  h2 {
+    flex-basis: 500px;
+    background: $primaryBg;
+    border: 5px solid rgb(231, 231, 231);
+
+    padding: 20px 20px;
+    text-align: center;
+    color: $color;
+    box-shadow: 0px 5px 20px 1px rgba(77, 77, 77, 0.678);
+
+    font-size: 35px;
+
+    span {
+      display: inline-block;
+      width: 70px;
+    }
+  }
 }
