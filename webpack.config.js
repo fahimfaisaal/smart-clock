@@ -10,8 +10,7 @@ if (process.env.NODE_ENV === "production") {
 
 const HtmlWebpackPlugin = require("html-webpack-plugin"),
     MiniCssExtractPlugin = require("mini-css-extract-plugin"),
-    EslintWebpackPlugin = require("eslint-webpack-plugin"),
-    ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
+    EslintWebpackPlugin = require("eslint-webpack-plugin");
 
 module.exports = {
     mode: mode,
@@ -57,22 +56,6 @@ module.exports = {
             emitError: false,
             emitWarning: false
         }),
-        new ImageMinimizerPlugin({
-            minimizerOptions: {
-                plugins: [
-                    ['gifsicle', { interlaced: true }],
-                    ['jpegtran', { progressive: true }],
-                    ['optipng', { optimizationLevel: 5 }],
-                    ['svgo', {
-                        plugins: [
-                            {
-                                removeViewBox: false
-                            }
-                        ]
-                    }]
-                ]
-            }
-        })
     ],
     devtool:false
 }
