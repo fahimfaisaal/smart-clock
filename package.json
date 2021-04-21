@@ -8,6 +8,7 @@
     "watch": "webpack --watch",
     "build-dev": "webpack",
     "build-prod": "NODE_ENV=production webpack",
+    "lint": "./node_modules/.bin/eslint src/js/main.js",
     "clean": "rm -rf dist"
   },
   "author": "Fahim Faisal",
@@ -23,6 +24,8 @@
     "babel-register": "^6.26.0",
     "css-loader": "^5.2.2",
     "eslint": "^7.24.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-webpack-plugin": "^2.5.3",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.1",
