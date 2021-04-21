@@ -16,12 +16,12 @@ let language = 'english';
 //* ================== Functions ======================
 const timeConverter = () => {
   const clock = new Clock(language);
-  const currentTimes = Object.freeze([
+  const currentTimes = [
     clock.getHour,
     clock.getMinutes,
     clock.getSeconds,
     clock.getMilliseconds,
-  ]);
+  ];
 
   timeNodes.forEach((time, index) => {
     // eslint-disable-next-line no-param-reassign
