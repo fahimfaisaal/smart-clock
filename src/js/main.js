@@ -1,8 +1,6 @@
 /* eslint-disable import/named */
 import '../scss/main.scss';
 import { Clock } from './Clock/clock';
-// eslint-disable-next-line import/no-unresolved
-// eslint-disable-next-line import/named
 import { Util } from './Util/util';
 
 //* ================== Variables ======================
