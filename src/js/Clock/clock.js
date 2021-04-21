@@ -1,9 +1,9 @@
 export class Clock {
-    #date
-    #hour
-    #minutes
-    #seconds
-    #milliseconds
+    #date;
+    #hour;
+    #minutes;
+    #seconds;
+    #milliseconds;
 
     constructor(language = 'english') {
         this.language = language.toLowerCase();
